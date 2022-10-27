@@ -111,8 +111,7 @@ for j=0:J
         for i=1:length(grid)-1 
           d1 = grid(i);
           d2 = grid(i)+q;
-          int = int + (d2-d1)/2 * (temp((1/2)*((-(3^(1/2))/3)*(d2-d1) + d2 + d1)) + 
-          temp((1/2)*(((3^(1/2))/3)*(d2-d1) + d2 + d1)));
+          int = int + (d2-d1)/2 * (temp((1/2)*((-(3^(1/2))/3)*(d2-d1) + d2 + d1)) + temp((1/2)*(((3^(1/2))/3)*(d2-d1) + d2 + d1)));
         endfor
         
         M(2^j+k+1, 2^l+m+1) = int;
@@ -131,8 +130,7 @@ for j=0:J
     for i=1:length(grid)-1
       d1 = grid(i);
       d2 = grid(i)+q;
-      int = int + (d2-d1)/2 * (temp((1/2)*((-(3^(1/2))/3)*(d2-d1) + d2 + d1)) +
-          temp((1/2)*(((3^(1/2))/3)*(d2-d1) + d2 + d1)));
+      int = int + (d2-d1)/2 * (temp((1/2)*((-(3^(1/2))/3)*(d2-d1) + d2 + d1)) + temp((1/2)*(((3^(1/2))/3)*(d2-d1) + d2 + d1)));
     endfor
     M(1, 2^j+k+1) = int;
     M(2^j+k+1, 1) = int;
@@ -176,8 +174,7 @@ for j=0:J
         for i=1:length(grid)-1 
           d1 = grid(i);
           d2 = grid(i)+q;
-          int = int + (d2-d1)/2 * (temp((1/2)*((-(3^(1/2))/3)*(d2-d1) + d2 + d1)) + 
-          temp((1/2)*(((3^(1/2))/3)*(d2-d1) + d2 + d1)));
+          int = int + (d2-d1)/2 * (temp((1/2)*((-(3^(1/2))/3)*(d2-d1) + d2 + d1)) + temp((1/2)*(((3^(1/2))/3)*(d2-d1) + d2 + d1)));
         endfor
         
         A(2^j+k+1, 2^l+m+1) = mu*int;
@@ -196,8 +193,7 @@ for j=0:J
     for i=1:length(grid)-1
       d1 = grid(i);
       d2 = grid(i)+q;
-      int = int + (d2-d1)/2 * (temp((1/2)*((-(3^(1/2))/3)*(d2-d1) + d2 + d1)) +
-          temp((1/2)*(((3^(1/2))/3)*(d2-d1) + d2 + d1)));
+      int = int + (d2-d1)/2 * (temp((1/2)*((-(3^(1/2))/3)*(d2-d1) + d2 + d1)) + temp((1/2)*(((3^(1/2))/3)*(d2-d1) + d2 + d1)));
     endfor
     
     A(1, 2^j+k+1) = int;
