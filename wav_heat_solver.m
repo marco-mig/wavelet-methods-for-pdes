@@ -4,7 +4,7 @@ function c_sol = wav_heat_solver(J)
 # Using a multiscale wavelet basis (piecewise linear) corresponding to the 
 # Biorthogonal B-spline Wavelets for d = d_tilda = 2  
 # Based on the methods in the book "Scientific Computing with MATLAB and Octave"
-# by Quateroni (2014) 
+# by Quarteroni (2014) 
 # J corresponds to the level of the approximation 
 # Example done for the given RHS f 
 
